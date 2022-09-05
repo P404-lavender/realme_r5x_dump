@@ -1,0 +1,71 @@
+####################################
+# from device/realme/r5x/product.prop
+####################################
+# Blur
+ro.surface_flinger.supports_background_blur=0
+# Set supported Bluetooth profiles to enabled
+bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.bas.client.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.sap.server.enabled=true
+bluetooth.profile.ccp.server.enabled=true
+# Set the Bluetooth Class of Device
+# Service Field: 0x5A -> 90
+#    Bit 17: Networking
+#    Bit 19: Capturing
+#    Bit 20: Object Transfer
+#    Bit 22: Telephony
+# MAJOR_CLASS: 0x02 -> 2 (Phone)
+# MINOR_CLASS: 0x0C -> 12 (Smart Phone)
+bluetooth.device.class_of_device=90,2,12
+# Dex
+ro.sys.fw.dex2oat_thread_count=8
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+####################################
+# from variable ADDITIONAL_PRODUCT_PROPERTIES
+####################################
+dalvik.vm.systemservercompilerfilter=speed-profile
+ro.build.characteristics=default
+####################################
+# from variable PRODUCT_PRODUCT_PROPERTIES
+####################################
+ro.com.google.acsa=true
+ro.com.google.gmsversion=12_beta
+setupwizard.feature.baseline_setupwizard_enabled=true
+ro.setupwizard.rotation_locked=true
+setupwizard.enable_assist_gesture_training=true
+setupwizard.theme=glif_v3_light
+setupwizard.feature.skip_button_use_mobile_data.carrier1839=true
+setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false
+setupwizard.feature.show_pixel_tos=false
+ro.opa.eligible_device=true
+ro.com.google.clientidbase=android-google
+ro.error.receiver.system.apps=com.google.android.gms
+ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+ro.setupwizard.enterprise_mode=1
+setupwizard.feature.predeferred_enabled=false
+ro.setupwizard.mode=OPTIONAL
+ro.control_privapp_permissions=log
+ro.com.google.ime.kb_pad_port_b=1
+ro.support_one_handed_mode=true
+ro.config.alarm_alert=Bright_morning.ogg
+ro.config.notification_sound=End_note.ogg
+ro.config.ringtone=The_big_adventure.ogg
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file
